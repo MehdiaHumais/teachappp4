@@ -6,8 +6,7 @@ import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
 import BottomNav from '../components/ui/BottomNav';
 import BackButton from '../components/ui/BackButton';
-import AllPDFsManager from '../components/Admin/AllPDFsManager';
-
+import AllPDFsManager from "../components/admin/AllPDFsManager";
 const ManageBuilding = () => {
   const { user } = useAuth();
   const [buildings, setBuildings] = useState([]);
@@ -1262,5 +1261,6 @@ const ManageBuilding = () => {
     </div>
   );
 };
+
 
 export default ManageBuilding;
