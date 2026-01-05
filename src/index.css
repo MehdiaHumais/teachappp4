@@ -1,0 +1,79 @@
+/* src/index.css (Tailwind CSS v3.4.17) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-light font-sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh; /* Ensure full height */
+}
+
+/* Full-screen container for mobile */
+.full-screen {
+  @apply h-screen w-full flex flex-col pb-16; /* Add padding bottom to accommodate bottom nav */
+}
+
+/* Bottom Navigation Bar Styles */
+.bottom-nav {
+  @apply fixed bottom-0 left-0 right-0 bg-gray-900 border-t border-gray-700 flex justify-around items-center py-2 px-4;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.bottom-nav-item {
+  @apply flex flex-col items-center p-2;
+}
+
+.bottom-nav-item.active {
+  @apply text-primary;
+}
+
+.bottom-nav-icon {
+  @apply text-xl mb-1;
+}
+
+.bottom-nav-label {
+  @apply text-xs;
+}
+
+.mockup-card {
+  @apply bg-gray-800 rounded-lg shadow-md p-4 mb-4;
+}
+
+.mockup-card-header {
+  @apply font-bold text-lg mb-2;
+}
+
+.mockup-card-section {
+  @apply mb-4;
+}
+
+.mockup-badge {
+  @apply inline-block px-2 py-1 text-xs font-semibold rounded-full;
+}
+
+.mockup-badge-huawei { @apply bg-purple-600; }
+.mockup-badge-nokia { @apply bg-blue-600; }
+.mockup-badge-smartolt { @apply bg-green-600; }
+.mockup-badge-u2000 { @apply bg-indigo-600; }
+.mockup-badge-positron { @apply bg-orange-600; }
+
+.mockup-complexity-low { @apply bg-green-600; }
+.mockup-complexity-medium { @apply bg-yellow-600; }
+.mockup-complexity-high { @apply bg-red-600; }
+
+/* Button Styles from Mockup */
+.btn-mockup {
+  @apply bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded transition duration-200;
+}
+
+.btn-mockup-outline {
+  @apply bg-transparent border border-primary text-primary font-bold py-2 px-4 rounded transition duration-200;
+}
+
+/* Input Styles from Mockup */
+.input-mockup {
+  @apply w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary;
+}
