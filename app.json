@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "52bcb4a5-5239-4292-955b-e7ff5148e2cd"
+      }
+    },
+    "android": {
+      "package": "com.alihamas_13.teachnicianapp"
+    }
+  }
+}
